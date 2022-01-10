@@ -1,4 +1,7 @@
-# Powershell configuration
-This is my personal powershell configuration
-It uses as prompt theme: oh-my-posh
-It relies on Fzf and PSFzf
+# Introduction
+This repo host my Powershell configuration
+# Features
++ prompt theme engine via [oh-my-posh](https://ohmyposh.dev/).
++ fuzzy searching via [PSfzf](https://github.com/kelleyma49/PSFzf) (it requires [fzf](https://github.com/junegunn/fzf))
++ custom `which` command
+
