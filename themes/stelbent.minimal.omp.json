@@ -4,41 +4,6 @@
     "blocks": [
         {
             "type": "prompt",
-            "alignment": "right",
-            "segments": [
-                {
-                    "type": "shell",
-                    "style": "plain",
-                    "foreground": "#007acc",
-                    "properties": {
-                        "prefix": "",
-                        "postfix": ""
-                    }
-                },
-                {
-                    "type": "root",
-                    "style": "plain",
-                    "foreground": "#ff8080",
-                    "properties": {
-                        "prefix": " <#757575,>as</> ",
-                        "postfix": "",
-                        "root_icon": "root"
-                    }
-                },
-                {
-                    "type": "time",
-                    "style": "plain",
-                    "foreground": "#689f38",
-                    "properties": {
-                        "prefix": " <#757575,>|</> ",
-                        "postfix": "",
-                        "time_format": "15:04:05"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "prompt",
             "alignment": "left",
             "newline": true,
             "segments": [
@@ -104,12 +69,49 @@
                     "style": "diamond",
                     "foreground": "#ffffff",
                     "background": "#00897b",
-                    "background_templates": ["{{ if gt .Code 0 }}#e91e63{{ end }}"],
+                    "background_templates": [
+                        "{{ if gt .Code 0 }}#e91e63{{ end }}"
+                    ],
                     "leading_diamond": "",
                     "trailing_diamond": "\uE0B4",
                     "properties": {
                         "always_enabled": true,
                         "template": "\uE23A"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "shell",
+                    "style": "plain",
+                    "foreground": "#007acc",
+                    "properties": {
+                        "prefix": "",
+                        "postfix": ""
+                    }
+                },
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "foreground": "#ff8080",
+                    "properties": {
+                        "prefix": " <#757575,>as</> ",
+                        "postfix": "",
+                        "root_icon": "root"
+                    }
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "#689f38",
+                    "properties": {
+                        "prefix": " <#757575,>|</> ",
+                        "postfix": "",
+                        "time_format": "15:04:05"
                     }
                 }
             ]
