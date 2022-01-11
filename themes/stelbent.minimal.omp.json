@@ -10,7 +10,7 @@
                 {
                     "type": "session",
                     "style": "plain",
-                    "foreground": "#757575",
+                    "foreground": "#778088",
                     "properties": {
                         "prefix": "\u250c ",
                         "template": "{{ .UserName }}@{{ .ComputerName }}"

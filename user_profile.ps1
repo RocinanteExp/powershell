@@ -18,6 +18,8 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 # Set-PSReadLineOption -EditMode Vi
+Set-PSReadLineKeyHandler -Key "Ctrl+n" -Function NextHistory
+Set-PSReadLineKeyHandler -Key "Ctrl+p" -Function PreviousHistory
 
 # Fzf
 Set-PsFzfOption -PSReadlineChordProvider "Ctrl+f" -PSReadlineChordReverseHistory "Ctrl+r"
