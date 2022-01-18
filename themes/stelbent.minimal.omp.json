@@ -13,7 +13,7 @@
                     "foreground": "#778088",
                     "properties": {
                         "prefix": "\u250c ",
-                        "template": "{{ .UserName }}@{{ .ComputerName }}"
+                        "template": "{{ .UserName }}@{{ .HostName }}"
                     }
                 },
                 {
