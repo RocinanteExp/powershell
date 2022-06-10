@@ -6,12 +6,11 @@ Set-Alias ll ls
 Import-Module PSFzf
 Import-Module PSReadLine
 Import-Module Terminal-icons
-Import-Module oh-my-posh
 Import-Module z
 
 # run oh-my-posh
 $PROMPT_CONFIG = [IO.Path]::Combine($PSScriptRoot, "themes", "stelbent.minimal.omp.json")
-oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
+oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
